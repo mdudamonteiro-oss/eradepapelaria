@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Star, Menu, X } from "lucide-react"
+import { Star, Menu, X, MessageCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -21,6 +21,7 @@ export default function FixedHeader() {
   const menuItems = [
     { name: "Sobre", href: "/#sobre" },
     { name: "Portfólio", href: "/portfolio" },
+    { name: "Extras", href: "/extras" },
     { name: "Valores", href: "/#valores" },
     { name: "Contato", href: "/#contato" },
   ]
@@ -34,14 +35,20 @@ export default function FixedHeader() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex-shrink-0">
-          <Image src="/images/logo-final.png" alt="Era de Papelaria" width={120} height={90} className="h-12 w-auto" />
+          <Image
+            src="/images/logo-final.png"
+            alt="Era de Papelaria"
+            width={120}
+            height={90}
+            className="h-12 w-auto hover:scale-105 transition-transform"
+          />
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center space-x-6">
           {menuItems.map((item, index) => (
             <div key={item.name} className="flex items-center">
-              {index > 0 && <Star className="w-3 h-3 text-romantic-pink/60 mx-4" />}
+              {index > 0 && <Star className="w-3 h-3 text-romantic-pink/60 mx-3" />}
               <Link
                 href={item.href}
                 className="text-mystical-purple hover:text-mystical-purple/80 font-light transition-colors"
@@ -50,6 +57,15 @@ export default function FixedHeader() {
               </Link>
             </div>
           ))}
+          {/* WhatsApp Button */}
+          <a
+            href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os kits de papelaria digital."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:flex items-center text-mystical-purple hover:text-mystical-purple/80 transition-colors"
+          >
+            <MessageCircle className="w-5 h-5" />
+          </a>
         </nav>
 
         {/* CTA Button */}

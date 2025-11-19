@@ -1,16 +1,16 @@
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
-import { Heart, Star, Clock, Package, ArrowRight } from "lucide-react"
+import { Heart, Star, Clock, Download, ArrowRight } from "lucide-react"
 
 export default function ProcessSteps() {
   const steps = [
     {
       step: "1",
       title: "Escolha seu Estilo",
-      desc: "Digital, impresso ou combo completo",
+      desc: "Navegue pelos nossos kits digitais",
       icon: Heart,
-      details: "Navegue por nossos kits e escolha o que mais combina com seu evento",
+      details: "Escolha entre kits prontos ou personalizados que mais combinam com seu evento",
       color: "from-romantic-pink/30 to-romantic-pink/10",
     },
     {
@@ -18,7 +18,7 @@ export default function ProcessSteps() {
       title: "Preencha o Formulário",
       desc: "Conte-nos sobre seu evento especial",
       icon: Star,
-      details: "Informações sobre data, estilo, quantidade e suas preferências",
+      details: "Informações sobre data, estilo e suas preferências para criarmos algo único",
       color: "from-mystical-purple/30 to-mystical-purple/10",
     },
     {
@@ -26,15 +26,15 @@ export default function ProcessSteps() {
       title: "Receba a Prévia",
       desc: "Em até 2 dias úteis no seu e-mail",
       icon: Clock,
-      details: "Você pode solicitar ajustes até ficar perfeito",
+      details: "Você pode solicitar até 3 revisões até ficar perfeito",
       color: "from-soft-blue/30 to-soft-blue/10",
     },
     {
       step: "4",
-      title: "Finalize e Receba",
-      desc: "Download ou entrega em casa",
-      icon: Package,
-      details: "Arquivos digitais ou convites impressos com embalagem especial",
+      title: "Download dos Arquivos",
+      desc: "Receba seus arquivos em alta resolução",
+      icon: Download,
+      details: "Arquivos em PDF e PNG prontos para compartilhar ou imprimir onde quiser",
       color: "from-romantic-pink/30 to-mystical-purple/10",
     },
   ]

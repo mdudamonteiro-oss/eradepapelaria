@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: "Posso imprimir quantas vezes quiser?",
-    answer: "Claro! Os arquivos são seus para sempre. Você pode imprimir quantas cópias precisar, quando quiser.",
+    answer: "Claro! Os arquivos são seus para sempre. Você pode imprimir quantas cópias precisar, onde quiser.",
   },
   {
     question: "Vocês fazem outros tipos de papelaria?",
@@ -42,7 +42,42 @@ const faqs = [
   {
     question: "E se eu não gostar do resultado?",
     answer:
-      "Queremos que você fique completamente satisfeita! Por isso, incluímos um número de revisões no processo para ajustarmos tudo até ficar do seu jeito antes da aprovação final.",
+      "Queremos que você fique completamente satisfeita! Por isso, incluímos revisões no processo para ajustarmos tudo até ficar do seu jeito antes da aprovação final.",
+  },
+  {
+    question: "Como funciona o processo de criação?",
+    answer:
+      "Após receber seu pedido, criamos um briefing detalhado com você. Em seguida, desenvolvemos a primeira versão do design e enviamos para sua aprovação. Você pode solicitar até 3 revisões para ajustes. Só finalizamos quando você estiver 100% satisfeita com o resultado!",
+  },
+  {
+    question: "Os arquivos servem para impressão?",
+    answer:
+      "Sim! Todos os nossos arquivos são criados em alta resolução (300 DPI) e são perfeitos para impressão em qualquer gráfica. Você recebe orientações sobre papel e tamanhos recomendados.",
+  },
+  {
+    question: "Como funcionam os extras digitais?",
+    answer:
+      "Os extras digitais são itens complementares que você pode adicionar ao seu kit principal. Incluem save the date, plaquinhas para fotos, tags personalizadas, cardápios e muito mais. Cada item custa entre R$ 15 e R$ 30 e segue o mesmo padrão visual do seu kit principal.",
+  },
+  {
+    question: "Posso pedir apenas os extras, sem o kit principal?",
+    answer:
+      "Sim! Você pode solicitar apenas os extras digitais se já tiver um convite ou quiser complementar um trabalho existente. Os preços permanecem os mesmos e mantemos a qualidade e atenção aos detalhes.",
+  },
+  {
+    question: "O que é o Jornal dos Noivos?",
+    answer:
+      "O Jornal dos Noivos é um produto exclusivo que conta a história de amor do casal em formato de jornal personalizado. Inclui a história de como se conheceram, linha do tempo, fotos, depoimentos de amigos e família, curiosidades e programação do casamento. É uma lembrança única e emocionante!",
+  },
+  {
+    question: "Quanto tempo leva para criar o Jornal dos Noivos?",
+    answer:
+      "O Jornal dos Noivos tem prazo de entrega de até 5 dias úteis, pois é um trabalho mais elaborado. Você recebe a primeira versão para aprovação e pode solicitar até 3 revisões para ajustes.",
+  },
+  {
+    question: "Preciso fornecer as fotos e textos para o Jornal?",
+    answer:
+      "Sim! Para criar o Jornal dos Noivos, você nos fornece as fotos do casal, informações sobre a história de vocês, depoimentos de familiares e amigos, e outros detalhes que queira incluir. Nós organizamos tudo de forma criativa e harmoniosa.",
   },
 ]
 
@@ -97,7 +132,7 @@ export default function FAQSection() {
           <p className="text-mystical-purple font-light mb-4">Não encontrou sua dúvida? Fale conosco!</p>
           <div className="flex justify-center space-x-4">
             <a
-              href="https://wa.me/5511999999999?text=Olá! Tenho uma dúvida sobre os kits de papelaria."
+              href="https://wa.me/5511999999999?text=Olá! Tenho uma dúvida sobre os kits de papelaria digital."
               target="_blank"
               rel="noopener noreferrer"
               className="text-mystical-purple hover:text-mystical-purple/80 font-light underline"
